@@ -16,6 +16,9 @@ module.exports = {
   },
   devServer: {
     contentBase: path.resolve(__dirname, "public"),
+    headers: {
+      "Cache-Control": "no-store",
+    },
   },
   plugins: [
     new HtmlWebpackPlugin({
